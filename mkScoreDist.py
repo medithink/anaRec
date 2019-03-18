@@ -81,6 +81,7 @@ def calc_cor_comb(mat1, mat2):
     mat1 = mat1
     mat2 = mat2
     temp_mat = mat1.T * mat2    # 点数分布の計算結果
+    print(temp_mat)
     res = np.zeros(len(mat1.T) + len(mat2.T) -1)    # 点数分布結果を格納するための配列
     for i in range(len(mat1.T) + len(mat2.T) -1):
         s = 0
